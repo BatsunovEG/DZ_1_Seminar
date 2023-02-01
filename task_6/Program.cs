@@ -6,4 +6,13 @@
 // 7 -> нет
 
 Console.Write("Введите число ... ");
-int number = Convert.ToInt32(Console.ReadLine());
+int numberA = Convert.ToInt32(Console.ReadLine());
+int numberB = numberA % 2;
+if (numberB == 0)
+{
+    Console.WriteLine($"Введенное число {numberA} является четным"); 
+}
+else
+{
+    Console.WriteLine($"Введенное число {numberA} является не четным");
+}
